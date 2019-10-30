@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的網頁</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 網頁抬頭選單 -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+            <div class="container">
+                <!-- LOGO -->
+                <a href="#" class="navbar-brand">
+                    <img src="images/ford logo.jpg" alt="logo">
+                </a>
+                
+                <!-- 手機選單漢堡按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <!-- 漢堡ICON -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!-- 選單內容 -->
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#product" class="nav-link">產品</a></li>
+                        <li><a href="#video" class="nav-link">形象廣告</a></li>
+                        <li><a href="#creative" class="nav-link">售價</a></li>
+                        <li><a href="#activity" class="nav-link">活動</a></li>
+                        <li><a href="#standard" class="nav-link">營業據點</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 可以輪播的Banner圖片 -->
+    <section id="product">
+        <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+            <!-- 輪播圖片 -->
+            <div class="carousel-inner">
+                <!-- 圖片1 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/banner01.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>美式風格</h1>
+                        <h2><p>剽悍野馬</p></h2>
+                    </div>
+                </div>
+                <!-- 圖片2 -->
+                <div class="carousel-item active carousel-item-left">
+                    <img class="w-100" src="images/banner02.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>皮卡王者降臨</h1>
+                        <h2> <p>滿足你的RV生活</p></h2>
+                    </div>
+                </div>
+                <!-- 圖片3 -->
+                <div class="carousel-item carousel-item-next carousel-item-left">
+                    <img class="w-100" src="images/banner03.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>時尚流體</h1>
+                    <h2><p>靈活小鋼炮</p></h2>
+                    </div>
+                </div>
+                <!--圖片4 -->
+                <div class="carousel-item carousel-item-next carousel-item-left">
+                    <img class="w-100" src="images/kuga.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>新世代休旅先鋒</h2>
+                    <h3><p>全家出遊好夥伴</p></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- 圖片上一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!-- 圖片下一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <!-- 下方點點 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-controller" data-slide-to="0" class=""></li>
+                <li data-target="#carousel-controller" data-slide-to="1" class=""></li>
+                <li data-target="#carousel-controller" data-slide-to="2" class=""></li>
+                <li data-target="#carousel-controller" data-slide-to="3" class="active"></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 影片 -->
+    <section class="container-fluid video-area" id="video">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LhlAZe0kSXw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- 產品介紹區塊(創意) -->
+    <section id="creative" class="creative_area">
+        <div class="container">
+            <h1 class="text-center">
+                車款介紹
+            </h1>
+            <!-- 產品照片 -->
+            <div class="row">
+                <!-- 照片組1 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片1" src="images/focus01.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">售價:</span>
+                                <span class="card-text">$678,000 起</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h3>THE ALL-NEW FORD</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組2 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片2" src="images/focus02.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">售價:</span>
+                                <span class="card-text">$648,000 起</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h3>FORD FIESTA</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組3 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片3" src="images/focus03.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">售價:</span>
+                                <span class="card-text">$1,329,000 起</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h3> NEW FORD MONDEO WAGON</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 商品文案 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="article_text">
+                    <h3></h3>
+                    <p>      <br>
+                             <br>
+                             <br>
+                        
+                    </p>
+                    <h3>     </h3>
+                    <p>        <br>
+                               <br>
+                               <br>
+                        
+                    </p>
+                    <h1>       </h1>
+                    <p>        <br>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景影片 -->
+        <div class="container">
+            <video autoplay="" muted="" loop="" id="myVideo">
+        <source src="video/egg.mp4" type="video/mp4">
+      </video>
+        </div>
+    </section>
+
+    <!-- 商品促銷活動區塊 -->
+    <section id="activity" class="activity_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/activity_img1.jpg">
+                </div>
+
+                <div class="col-md-4 activity_price text-center">
+                    <h1>優惠：</h1> <h5><span>現在入主享60萬高額0利率 </span></h5> 
+                    <h1>再</h1>
+                    <h1>享延長保固</h1>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/activity_img2.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 規格 -->
+    <section id="standard" class="standard_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                        "<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14562.495287427131!2d120.6464872!3d24.1498456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0722e693785a3b8!2z5Lmd5ZKM5rG96LuKLeaWh-W_gyjlsZXnpLrkuK3lv4Mp!5e0!3m2!1szh-TW!2stw!4v1572351044542!5m2!1szh-TW!2stw" 
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>" 
+                           
+                        </iframe>
+                    <h5 scope="col">規格說明：</h5><table class="table table-hover">
+                        <tbody><tr>
+                            
+                        </tr>
+                        
+                        </tbody><tbody>
+                            
+                            <tr>
+                                <th scope="row">中英文品名：</th>
+                                <td>FORD THE NEW FOCUS</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">材質：</th>
+                                <td>車身結構更採用高達33%航太級硼鋼與高剛性鋼材布局，並結合雷射熔
+                                    焊技術，打造出堅韌與美觀兼具的車身特性。</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">尺寸：</th>
+                                <td colspan="2">炒鍋:28X9cm、煎鍋:26X5cm 湯鍋:20X9cm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">內裝：</th>
+                                <td colspan="2">全車系標配8吋懸浮式全彩LCD觸控螢幕，將車室按鈕縮減50%；中控排檔總成採用全新的E-Shifter電子式旋鈕排檔系統及EPB按鍵式
+                                    電子手煞車組合，讓整體空間布局簡約奢華，並使得置物空間包含置杯架、前座中央扶手附置物箱的置物收納空間也更加寬大。</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">引擎動力：</th>
+                                <td colspan="2">EcoBoost®182渦輪增壓汽油引擎
+                                    EcoBoost®182渦輪增壓汽油引擎搭載SelectShiftTM八速手自排變速箱，最大馬力182ps、最大扭力24.5kg-m、最佳油耗17.6km/L，其結合多重優勢技術，包含：
+                                    同級唯一SelectShift™八速手自排變速箱*</td>
+                                    <td>全新SelectShiftTM八速手自排變速箱提供更快更細緻的換檔速度、更低的摩擦損耗，並將SOWC單向離合器與制動離合器進行整合，使變速箱體積變小，
+                                    並改善車輛起步時的重拖現象，達到輕快的起步，以提升燃油效率及加速性，讓駕馭快感如虎添翼！
+                                    
+                                    </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                       </p><h5 scope="col"> <p align="right">免責說明</p>：</h5><ul class="standard_use">
+                             <li><p align="right">[1]  本網頁產品規格配備、車色以實車為準。</p></li>
+                            <li><p align="right">[2]  表列數值為標準值未含容許公差。</p></li>
+                            <li><p align="right">[3]  產品持續研究改進為本公司一貫經營理念，福特六和汽車公司保留產品規格配備變更或停用之權利。</p></li>
+                            <li><p align="right">[4] ”最高車速”與”0-100km/h加速時間”均為測試數據。實際道路駕駛時，因受天候、路況、載重、使用空調系統、駕駛習慣及車輛維護保養因素影響。其實際數據常不同於測試值。</li>
+                        </ul><table class="table"> </p>
+                        <tbody><tr>
+                            
+                        </tr>
+                        
+                    </tbody></table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 貼心提醒 -->
+    <section>
+        <div class="container content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/foot01.jpg">
+                   </div>
+                   <div class="container">
+                    <div class="row">
+                        <p class="col-md-4">
+                            <img align="right"> <img src="images/foot02.jpg"></p>
+                       </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 footer_logo">
+                    <img src="images/logo.blue.png">
+                </div>
+                <div class="col-md-4 col-sm-12 footer_address">
+                    <ul>
+                        <li>專 線：04-22559900</li>
+                        <li>服務時間：週一至週六 08:30 ~ 20:00 </li>
+                        <li>全方位顧客服務專線：0800-032-100</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer_copyright justify-content-center">
+                <p>COPYRIGHT © 2019 S1410622026 杜柏賢 .ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+    <script src="js/back_top.js"></script>
+
+
+</body></html>
